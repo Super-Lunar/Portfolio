@@ -1,5 +1,6 @@
 //
 import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 const App = () => {
   return (
@@ -9,10 +10,11 @@ const App = () => {
       </div>
       <div
         className='
-      container mx-auto px-8
+      container mx-auto px-8 
       '
       >
         <Navbar />
+        <Profile />
       </div>
     </div>
   );
