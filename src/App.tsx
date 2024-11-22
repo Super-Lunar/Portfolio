@@ -1,6 +1,8 @@
 //
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
+import Technical from "./components/Technical";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       >
         <Navbar />
         <Profile />
+        <Technical />
+        <Projects />
       </div>
     </div>
   );
