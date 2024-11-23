@@ -4,7 +4,6 @@ export interface Project {
   technologies: string[];
 }
 
-// Define the array type
 export const project: Project[] = [
   {
     title: "EVOGYM",

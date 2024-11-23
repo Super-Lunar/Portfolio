@@ -1,4 +1,5 @@
 //
+import Experience from "./components/Experience";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
@@ -19,6 +20,7 @@ const App = () => {
         <Profile />
         <Technical />
         <Projects />
+        <Experience />
       </div>
     </div>
   );
