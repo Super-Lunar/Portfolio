@@ -36,7 +36,7 @@ const buttonVariant = {
 
 const Profile = () => {
   return (
-    <div className="pb-12 lg:mb-36 text-white">
+    <div className="pb-12 lg:mb-36 text-white font-sans">
       <div className="flex flex-wrap lg:flex-row-reverse items-center">
         <div className="w-full lg:w-1/2 flex justify-center mx-auto">
           <div className="flex justify-center lg:p-8">
@@ -61,7 +61,7 @@ const Profile = () => {
           >
             <motion.h2
               variants={childVariant}
-              className="pb-2 text-4xl lg:text-6xl font-bold tracking-tight text-white"
+              className="pb-2 text-4xl lg:text-8xl  tracking-tight text-white"
             >
               Saurabh Sharma Timilsina
             </motion.h2>

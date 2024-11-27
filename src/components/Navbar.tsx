@@ -10,7 +10,7 @@ type Props = {
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <nav className="flex items-center justify-between p-4 text-white mt-4 w-full">
-      <div className="flex flex-shrink-0 gap-8 items-start w-full justify-center">
+      <div className="flex flex-shrink-0 gap-8 items-start w-full justify-center ">
         <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         <Link page="Experience" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
