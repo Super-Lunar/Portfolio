@@ -1,11 +1,13 @@
 import { useState } from "react";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Navbar from "./components/Navbar";
-import Profile from "./components/Profile";
-import Projects from "./components/Projects";
-import Technical from "./components/Technical";
-import { SelectedPage } from "./constants/selectedPage";
+import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
+import Navbar from "@/components/Navbar";
+import Profile from "@/components/Profile";
+import Projects from "@/components/Projects";
+import Technical from "@/components/Technical";
+import { SelectedPage } from "@/constants/selectedPage";
+
+import { Toaster } from "./components/ui/toaster";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -22,6 +24,7 @@ const App = () => {
         <Projects />
         <Experience />
         <Contact />
+        <Toaster />
       </div>
     </div>
   );
