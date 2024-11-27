@@ -21,7 +21,7 @@ const ContactCard = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-black shadow-md rounded-lg">
+    <div className="max-w-md mx-auto p-6 bg-black shadow-md rounded-lg w-full">
       <form onSubmit={handleSubmit} className="space-y-4">
         <fieldset className="space-y-4">
           <legend className="text-lg font-semibold text-white">Contact Us</legend>
@@ -36,7 +36,7 @@ const ContactCard = () => {
               placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
-              className="rounded-sm py-2 px-3 border border-gray-300 focus:ring-2 focus:ring-slate-200 focus:outline-none text-black"
+              className="w-full rounded-sm py-2 px-3 border border-gray-300 focus:ring-2 focus:ring-slate-200 focus:outline-none text-black"
             />
           </div>
 
@@ -50,7 +50,7 @@ const ContactCard = () => {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="rounded-sm py-2 px-3 border border-gray-300 focus:ring-2 focus:ring-slate-200 focus:outline-none text-black"
+              className="w-full rounded-sm py-2 px-3 border border-gray-300 focus:ring-2 focus:ring-slate-200 focus:outline-none text-black"
             />
           </div>
 
@@ -63,7 +63,7 @@ const ContactCard = () => {
               placeholder="Type your message here"
               value={formData.message}
               onChange={handleChange}
-              className="rounded-sm py-2 px-3 border border-gray-300 focus:ring-2 focus:ring-slate-200 focus:outline-none text-black"
+              className="w-full rounded-sm py-2 px-3 border border-gray-300 focus:ring-2 focus:ring-slate-200 focus:outline-none text-black"
               rows={4}
             />
           </div>
@@ -73,13 +73,13 @@ const ContactCard = () => {
           <button
             type="button"
             onClick={handleClear}
-            className="py-2 px-4 bg-white text-black font-medium rounded-md hover:bg-stone-200 "
+            className="py-2 px-4 bg-white text-black font-medium rounded-md hover:bg-stone-200"
           >
             Clear All
           </button>
           <button
             type="submit"
-            className="py-2 px-4 bg-stone-700 text-white font-medium rounded-md hover:bg-stone-600 "
+            className="py-2 px-4 bg-stone-700 text-white font-medium rounded-md hover:bg-stone-600"
           >
             Submit
           </button>
