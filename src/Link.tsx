@@ -5,15 +5,22 @@ type Props = {
   page: string;
   selectedPage: SelectedPage;
   setSelectedPage: (value: SelectedPage) => void;
+  // Optional prop for closing the mobile menu
+  onClick?: () => void;
 };
 
-const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
+const Link = ({ page, selectedPage, setSelectedPage, onClick }: Props) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
   // Explicitly type the event
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setSelectedPage(lowerCasePage);
+
+    // Close the mobile menu if onClick is passed
+    if (onClick) {
+      onClick();
+    }
   };
 
   return (

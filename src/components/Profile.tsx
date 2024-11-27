@@ -36,8 +36,9 @@ const buttonVariant = {
 
 const Profile = () => {
   return (
-    <div className="pb-12 lg:mb-36 text-white font-sans">
-      <div className="flex flex-wrap lg:flex-row-reverse items-center">
+    <div className="pb-12 lg:mb-36 text-white font-sans overflow-hidden">
+      <div className="flex flex-wrap lg:flex-row-reverse items-center w-full overflow-hidden">
+        {/* Profile Picture */}
         <div className="w-full lg:w-1/2 flex justify-center mx-auto">
           <div className="flex justify-center lg:p-8">
             <motion.img
@@ -45,13 +46,15 @@ const Profile = () => {
               alt="Profile Picture"
               width={650}
               height={650}
-              className="border-4 border-stone-900 rounded-3xl shadow-xl"
+              className="border-4 border-stone-900 rounded-3xl shadow-xl max-w-full"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             />
           </div>
         </div>
+
+        {/* Profile Information */}
         <div className="w-full lg:w-1/2">
           <motion.div
             initial="hidden"
@@ -61,7 +64,7 @@ const Profile = () => {
           >
             <motion.h2
               variants={childVariant}
-              className="pb-2 text-4xl lg:text-8xl  tracking-tight text-white"
+              className="pb-2 text-4xl lg:text-8xl tracking-tight text-white"
             >
               Saurabh Sharma Timilsina
             </motion.h2>
