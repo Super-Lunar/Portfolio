@@ -87,7 +87,7 @@ const Profile = () => {
             </motion.p>
             <motion.a
               variants={buttonVariant}
-              href="/public/Saurabh's resume.pdf"
+              href="/Saurabh's resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
